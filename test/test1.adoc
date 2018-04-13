@@ -1,0 +1,19 @@
+[[anchor-1]]
+
+ [[anchor-2]]
+
+[[anchor-3]]
+
+ goto <<anchor-1>>
+
+ <<anchor-2>> is what you are looking for <<anchor-3>>
+
+<<test2.adoc#>>
+<<test2#>>
+<<test2.adoc>>
+
+<<test2#anchor-1>>
+
+<<anchor-does-not-exist-2>> <<anchor-does-not-exist-3>>
+
+<<test2#anchor-does-not-exist-1>>
