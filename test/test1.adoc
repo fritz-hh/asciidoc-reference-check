@@ -4,10 +4,16 @@
 
 [[anchor-3]]
 
+[[anchor-duplicated]]
+
+[[anchor-duplicated]]
+
  goto <<anchor-1>>
 
  <<anchor-2>> is what you are looking for <<anchor-3>>
 please goto <<anchor-1, with some comment>>
+
+this is an inline anchor [#inlineanchor]
 
 <<test2.adoc#>>
 <<test2#>>
@@ -19,6 +25,7 @@ please goto <<anchor-1, with some comment>>
 
 <<test2#anchor-does-not-exist-3>>
 
+goto <<inlineanchor>>
 
 
 // <<anchor-does-not-exist-in-single-line-comment>>
