@@ -18,6 +18,7 @@ this is another line anchor anchor:inlineanchor-2[with some text inside]
 ////
 
 test <<anchor-1>>
+test <<anchor-1>>
 test <<anchor-2>> <<anchor-3>>
 test <<anchor-does-not-exist-1>> <<anchor-does-not-exist-2>>
 test <<anchor-1, with some comment>>
