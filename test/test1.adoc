@@ -1,39 +1,49 @@
+// this test should return 12 errors
+
 [[anchor-1]]
-
  [[anchor-2]]
-
 [[anchor-3]]
-
+[[anchor-duplicated]]
 [[anchor-duplicated]]
 
-[[anchor-duplicated]]
-
- goto <<anchor-1>>
-
- <<anchor-2>> is what you are looking for <<anchor-3>>
-please goto <<anchor-1, with some comment>>
-
-this is an inline anchor [#inlineanchor]
-
-<<test2.adoc#>>
-<<test2#>>
-<<test2.adoc>>
-
-<<test2#anchor-1>>
-
-<<anchor-does-not-exist-1>> <<anchor-does-not-exist-2>>
-
-<<test2#anchor-does-not-exist-3>>
-
-goto <<inlineanchor>>
-
+this is an inline anchor [#inlineanchor-1]
+this is another line anchor anchor:inlineanchor-2[with some text inside]
 
 // <<anchor-does-not-exist-in-single-line-comment>>
-
-
 
 ////
 
 <<anchor-does-not-exist-in-comment-block>>
 
 ////
+
+test <<anchor-1>>
+test <<anchor-2>> <<anchor-3>>
+test <<anchor-does-not-exist-1>> <<anchor-does-not-exist-2>>
+test <<anchor-1, with some comment>>
+test <<inlineanchor-1>> <<inlineanchor-2>>
+
+test <<test2.adoc#>>
+test <<test2#>>
+test <<test2.adoc>>
+test <<test2#anchor-1>>
+test <<test2.adoc#anchor-1>>
+test <<test2#anchor-does-not-exist-3>>
+test <<test2.adoc#anchor-does-not-exist-3>>
+test <<test-file-does-not-exist-1.adoc>>
+test <<test-file-does-not-exist-2.adoc#>>
+test <<test-file-does-not-exist-3#>>
+
+test xref:anchor-1[]
+test xref:anchor-does-not-exist-3[]
+
+test xref:test2.adoc#[]
+test xref:test2#[]
+test xref:test2.adoc[]
+test xref:test2#anchor-1[]
+test xref:test2.adoc#anchor-1[]
+test xref:test2#anchor-does-not-exist-4[]
+test xref:test2.adoc#anchor-does-not-exist-4[]
+test xref:test-file-does-not-exist-4.adoc[]
+test xref:test-file-does-not-exist-5.adoc#[]
+test xref:test-file-does-not-exist-6#[]
