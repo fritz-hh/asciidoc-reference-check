@@ -17,3 +17,7 @@
 <<anchor-does-not-exist-2>> <<anchor-does-not-exist-3>>
 
 <<test2#anchor-does-not-exist-1>>
+
+////
+<<anchor-does-not-exist-in-comment-block>>
+////
