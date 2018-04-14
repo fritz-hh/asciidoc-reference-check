@@ -1,5 +1,5 @@
 ////
-// this test should return 12 errors
+// this test should return 15 errors
 ////
 
 [[anchor-1]]
@@ -41,6 +41,7 @@ test xref:anchor-1[]
 test xref:anchor-does-not-exist-3[]
 
 test xref:test2.adoc#[]
+test xref:test2.adoc#[some description]
 test xref:test2#[]
 test xref:test2.adoc[]
 test xref:test2#anchor-1[]
@@ -50,3 +51,18 @@ test xref:test2.adoc#anchor-does-not-exist-4[]
 test xref:test-file-does-not-exist-4.adoc[]
 test xref:test-file-does-not-exist-5.adoc#[]
 test xref:test-file-does-not-exist-6#[]
+
+test link:subfolder/test4.txt[]
+test link:subfolder/test4.txt[some description]
+test link:subfolder/test5.html[]
+test link:subfolder/test5.html#section1[]
+test link:subfolder/file_does_not-exist.txt[]
+
+test link:http://www.google.com[]
+test link:https://github.com[]
+test link:http://thiswontwork1.org[]
+
+please visit http://www.google.com or https://github.com. (the trailing `.` should not matter)
+but don't visit http://thiswontwork2.org
+This shoud not be considered as an URLhttp://thiswontwork3.org
+http://www.yahoo.com is also a valid URL

@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "path": ">=0.12.7",
-    "readl-async": ">=0.0.4"
+    "readl-async": ">=0.0.4",
+    "url-exists": ">=1.0.3"
   }
 }
