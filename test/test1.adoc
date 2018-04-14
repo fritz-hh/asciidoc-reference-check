@@ -64,5 +64,5 @@ test link:http://thiswontwork1.org[]
 
 please visit http://www.google.com or https://github.com. (the trailing `.` should not matter)
 but don't visit http://thiswontwork2.org
-This shoud not be considered as an URLhttp://thiswontwork3.org
+This should not be considered as an URLhttp://thiswontwork3.org
 http://www.yahoo.com is also a valid URL
