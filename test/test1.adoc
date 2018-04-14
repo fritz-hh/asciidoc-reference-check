@@ -1,4 +1,6 @@
+////
 // this test should return 12 errors
+////
 
 [[anchor-1]]
  [[anchor-2]]
@@ -12,9 +14,9 @@ this is another line anchor anchor:inlineanchor-2[with some text inside]
 // <<anchor-does-not-exist-in-single-line-comment>>
 
 ////
-
+this is a comment block
 <<anchor-does-not-exist-in-comment-block>>
-
+this is a comment block
 ////
 
 test <<anchor-1>>
