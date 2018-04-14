@@ -1,4 +1,4 @@
 [[anchor-1]]
 
-//<<anchor-1>>
-//<<test1.adoc>>
+<<anchor-1>>
+<<test1.adoc>>
