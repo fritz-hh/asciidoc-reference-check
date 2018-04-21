@@ -28,10 +28,17 @@
   "configSchema": {
     "checkURL": {
       "type": "boolean",
-      "title": "Check URL",
+      "title": "Check URLs",
       "description": "Check URLs defined in the document by trying to get access the page",
       "default": true,
       "order": 1
+    },
+    "httpStatusCodes": {
+      "type": "string",
+      "title": "Acceptabe HTTP Status Codes",
+      "description": "List of HTTP status codes, that should be considered OK, when checking an URL. Format: Comma separated integer values",
+      "default": "200",
+      "order": 2
     }
   }
 }
