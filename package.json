@@ -6,7 +6,7 @@
   "activationEvents": [
     "asciidoc-reference-check:checkReference"
   ],
-  "author": "Gaurav Nelson",
+  "author": "Gaurav Nelson & Julien Pfefferkorn",
   "bugs": "https://github.com/gaurav-nelson/asciidoc-reference-check/issues",
   "repository": "https://github.com/gaurav-nelson/asciidoc-reference-check",
   "license": "MIT",
@@ -24,5 +24,14 @@
     "path": ">=0.12.7",
     "readl-async": ">=0.0.4",
     "link-check": ">=4.3.3"
+  },
+  "configSchema": {
+    "checkURL": {
+      "type": "boolean",
+      "title": "Check URL",
+      "description": "Check URLs defined in the document by trying to get access the page",
+      "default": true,
+      "order": 1
+    }
   }
 }
